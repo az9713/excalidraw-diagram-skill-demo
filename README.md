@@ -26,6 +26,15 @@ Demonstration of AI-generated Excalidraw diagrams using the [excalidraw-diagram-
 - Real SSE wire-format payloads and TypeScript client code
 - All 28+ event types organized into 7 categories (Lifecycle, Text, Tool Call, State, Activity, Reasoning, Special)
 
+## How It Works
+
+See **[HOW-IT-WORKS.md](HOW-IT-WORKS.md)** for a deep dive into the skill's internals:
+
+- **Methodology** — How Claude thinks about diagrams (visual patterns, shape semantics, color palette, multi-zoom architecture)
+- **Rendering Pipeline** — The role of Playwright and Chromium in converting JSON to PNG
+- **Research Trigger** — When and why Claude researches a topic before drawing
+- **Build-Render-Validate Loop** — How Claude catches visual bugs by viewing its own output
+
 ## Usage
 
 1. Install the [excalidraw-diagram-skill](https://github.com/coleam00/excalidraw-diagram-skill) in Claude Code
